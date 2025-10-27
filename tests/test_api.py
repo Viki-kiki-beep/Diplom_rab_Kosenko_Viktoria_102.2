@@ -49,7 +49,7 @@ def test_create_event():
         body = {"backgroundColor": "#F4F5F6",
          "color": "#81888D",
          "description": "Тестовое Событие",
-         "title": "Тестовое Событие Бондаренко",
+         "title": "Тестовое Событие Косенко",
          "startAt": "2025-10-19T20:00:00+03:00",
          "endAt": "2025-10-19T20:30:00+03:00"
          }
@@ -76,7 +76,7 @@ def test_update_title_event():
         body = {"backgroundColor": "#F4F5F6",
                 "color": "#81888D",
                 "description": "Тестовое Событие",
-                "title": "Тестовое Событие Бондаренко",
+                "title": "Тестовое Событие Косенко",
                 "startAt": "2025-10-19T20:00:00+03:00",
                 "endAt": "2025-10-19T20:30:00+03:00"
                 }
@@ -90,7 +90,7 @@ def test_update_title_event():
         body ={
             "color": "#81888D",
             "id": id,
-            "title": "ТTTTестовое Событие Бондаренко",
+            "title": "ТTTTестовое Событие Косенко",
             "endAt": "2025-10-19T20:30:00+03:00",
             "startAt": "2025-10-19T20:00:00+03:00",
             "oldStartAt": "2025-10-19T20:00:00+03:00",
@@ -103,7 +103,7 @@ def test_update_title_event():
         data= resp.json()
         title = data['data']['payload']['payload']['title']
     with allure.step('сравнение полученного значения ключа "title" ожидаемым знначением'):
-        assert title == "ТTTTестовое Событие Бондаренко"
+        assert title == "ТTTTестовое Событие Косенко"
 
     with allure.step('удаление события для очистки тестового пространства'):
         url = f"{base_url_api}/schedule/removePersonal"
@@ -119,7 +119,7 @@ def test_delete_event():
         body = {"backgroundColor": "#F4F5F6",
                 "color": "#81888D",
                 "description": "Тестовое Событие",
-                "title": "Тестовое Событие Бондаренко",
+                "title": "Тестовое Событие Косенко",
                 "startAt": "2025-10-19T20:00:00+03:00",
                 "endAt": "2025-10-19T20:30:00+03:00"
                 }
