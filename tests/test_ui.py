@@ -3,7 +3,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from .conftest import browser
 from pages.AuthPage import AuthPage
-from ..pages.Schedule import Schedule
+from pages.Schedule import Schedule
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -63,4 +63,3 @@ def test_delite_event(browser):
                 (By.XPATH, "//div[@class='long-view__title' and text()='Дополнительный урок']"))
         )
         assert True
-
