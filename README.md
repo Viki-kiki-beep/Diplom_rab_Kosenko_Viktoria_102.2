@@ -11,7 +11,7 @@
 3. 1)Создать виртуальное окружение и 2)активировать его: 1)python -m venv venv, 2)venv\scripts\activate # Windows
 4. Если pytest не запускает проект то установите переменную окружения
 - "$env:PYTHONPATH = "путь к корневой директории проекта"
-- например ($env:PYTHONPATH="C:\Users\Пользователь\OneDrive\Desktop\DIPLOM\Kosenko_V_A")
+- например ($env:PYTHONPATH="C:\Users\Пользователь\OneDrive\Desktop\DIPLOM\Diplom_rab_Kosenko_Viktoria_102.2")
 5. Установить зависимости: pip install -r requirements.txt
 6. Зайти на страницу https://teachers.skyeng.ru/schedule предварительно авторизовавшись (login, pass текущий token в допах), открыть
    DevTool перейти на вкладку Application выбрать Cookies затем https://teachers.skyeng.ru найти token_global скопировать
